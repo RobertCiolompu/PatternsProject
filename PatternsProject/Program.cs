@@ -10,6 +10,10 @@ namespace PatternsProject
     {
         static void Main(string[] args)
         {
+            IAdapter client = new Adapter();
+            client.request();
+
+            Console.ReadKey();
         }
     }
 }

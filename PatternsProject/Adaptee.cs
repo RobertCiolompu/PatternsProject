@@ -8,5 +8,9 @@ namespace PatternsProject
 {
     class Adaptee
     {
+        public void specialRequest()
+        {
+            Console.WriteLine("SpecialRequest");
+        }
     }
 }

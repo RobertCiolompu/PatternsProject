@@ -8,5 +8,6 @@ namespace PatternsProject
 {
     interface IAdapter
     {
+        void request();
     }
 }
