@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatternsProject
+namespace PatternUsage
 {
     class SubSystem3
     {
+        public void method3()
+        {
+            Console.WriteLine("I am SubSystem3");
+        }
     }
 }
