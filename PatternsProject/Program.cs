@@ -10,10 +10,46 @@ namespace PatternsProject
     {
         static void Main(string[] args)
         {
-            IAdapter client = new Adapter();
-            client.request();
 
+            Console.WriteLine("Please select the index of the desired specialization:\nPaladin : 1\nWarrior : 2\nMage : 3");
+
+            getSpecializationData();
+            
             Console.ReadKey();
+        }
+
+        public static void getSpecializationData()
+        {
+            try
+            {
+                int selectedIndex = Convert.ToInt32(Console.ReadLine());
+
+                switch (selectedIndex)
+                {
+                    case 1:
+                        ISpecialization paladin = new SpecializationAdapter();
+                        paladin.getSpecializationInfo();
+                        break;
+                    case 2:
+                        ISpecialization warrior = new SpecializationAdapter();
+                        warrior.getSpecializationInfo();
+                        break;
+                    case 3:
+                        ISpecialization mage = new SpecializationAdapter();
+                        mage.getSpecializationInfo();
+                        break;
+                    default:
+                        Console.WriteLine($"An unexpected value ({selectedIndex}). Please try again.");
+                        getSpecializationData();
+                        break;
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Input not in a valid format. Please try again.");
+                getSpecializationData();
+            }
+
         }
     }
 }

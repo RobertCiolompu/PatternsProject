@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace PatternsProject
 {
-    class Adaptee
+    interface ISpecialization
     {
-        public void specialRequest()
-        {
-            Console.WriteLine("SpecialRequest");
-        }
+        void getSpecializationInfo();
     }
 }
