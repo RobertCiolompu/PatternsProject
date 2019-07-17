@@ -8,17 +8,17 @@ namespace PatternUsage
 {
     class Facade
     {
-        private SubSystem1 _one;
-        private SubSystem2 _two;
-        private SubSystem3 _three;
-        private SubSystem4 _four;
+        private Attack _one;
+        private Boost _two;
+        private Heal _three;
+        private MinorHeal _four;
 
         public Facade()
         {
-            _one = new SubSystem1();
-            _two = new SubSystem2();
-            _three = new SubSystem3();
-            _four = new SubSystem4();
+            _one = new Attack();
+            _two = new Boost();
+            _three = new Heal();
+            _four = new MinorHeal();
         }
 
         public void methodA()

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PatternUsage
 {
-    class SubSystem1
+    class MinorHeal
     {
-        public void method1()
+        public void method4()
         {
-            Console.WriteLine("I am SubSystem1");
+            Console.WriteLine("I am SubSystem4");
         }
     }
 }

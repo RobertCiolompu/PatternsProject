@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatternsProject
+namespace PatternUsage
 {
-    class SubSystem5
+    class FireBall
     {
     }
 }

@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatternUsage
 {
-    class SubSystem2
+    class IceRain
     {
-        public void method2()
-        {
-            Console.WriteLine("I am SubSystem2");
-        }
     }
 }
