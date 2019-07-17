@@ -21,22 +21,6 @@ in a special way, etc...
 The application will allow the user to select one of the 3 specializations mentioned above and will return every information related to that
 specific specialization: which talents can be learnt by that specialization and information about the spells and abilities coming with that talent.
 
-Talents	 |	 Talent 1	|Talent 2
-------------------------------------------
-Paladin	 |	Retribution	| Holy
-Warrior	 |	   Arms		|  Fury
-Mage	 |	   Frost	|  Fire
-
-
-"Spells &
- Abilities"|		Paladin		   |	        Warrior		     |            Mage	           |
-------------------------------------------------------------------------------------------------------------
-Talents	   |	Retribution  |	   Holy    |     Arms	    |	Fury	     |	 Frost	     |     Fire    |
-------------------------------------------------------------------------------------------------------------
-1	   |      Attack     |	Minor Heal |	Attack	    |   Attack	     |	Frostbolt    |	Fire Ball  |
-2	   |	  Boost      |  Major Heal |   Brutal Attack|	Throw Weapon |	Ice rain     |	Incinerate |
-3	   |	  Heal	     |		   |	Windwhirl   |	Charge	     |   Boost	     |             |
-
 ----------------------------------------------------------------------------
 
 The application is going to be built based on 2 design patterns: 
