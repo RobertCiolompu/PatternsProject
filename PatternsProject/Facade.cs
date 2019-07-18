@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatternUsage
+namespace PatternProject
 {
     class Facade
     {
@@ -24,7 +24,7 @@ namespace PatternUsage
         public void methodA()
         {
             Console.WriteLine("\nMethodA() ---- ");
-            _one.method1();
+            _one.GetDamageAttack();
             _two.method2();
             _four.method4();
             _three.method3();
