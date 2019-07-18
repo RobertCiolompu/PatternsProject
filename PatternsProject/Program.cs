@@ -10,7 +10,6 @@ namespace PatternsProject
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Please select the index of the desired specialization:\nPaladin : 1\nWarrior : 2\nMage : 3");
 
             getSpecializationData();
@@ -28,15 +27,15 @@ namespace PatternsProject
                 {
                     case 1:
                         ISpecialization paladin = new SpecializationAdapter();
-                        paladin.getSpecializationInfo();
+                        paladin.retrievePaladinInfo();
                         break;
                     case 2:
                         ISpecialization warrior = new SpecializationAdapter();
-                        warrior.getSpecializationInfo();
+                        warrior.retrieveWarriorInfo();
                         break;
                     case 3:
                         ISpecialization mage = new SpecializationAdapter();
-                        mage.getSpecializationInfo();
+                        mage.retrieveMageInfo();
                         break;
                     default:
                         Console.WriteLine($"An unexpected value ({selectedIndex}). Please try again.");

@@ -10,20 +10,33 @@ namespace PatternsProject
     {
         FirstTalentSet firstTalentSet = new FirstTalentSet();
         SecondTalentSet secondTalentSet = new SecondTalentSet();
+        private string retribution = "";
+        private string holy = "";
+        private string arms = "";
+        private string fury = "";
+        private string frost = "";
+        private string fire = "";
+        
 
-        public void getMethod()
+        protected void getPaladinInformation()
         {
-            Console.WriteLine("SpecialRequest");
+            firstTalentSet.GetRetribution(retribution);
+            secondTalentSet.GetHoly(holy);
+            Console.WriteLine("Retribution Specialization:\n{0}\n\nHoly Specialization\n{1}",retribution,holy);
         }
 
-        public void getWarriorTalents()
+        protected void getWarriorInformation()
         {
-
+            firstTalentSet.GetArms(arms);
+            secondTalentSet.GetFury(fury);
+            Console.WriteLine("Arms Specialization:\n{0}\n\nFury Specialization\n{1}", arms, fury);
         }
 
-        public void getMageTalents()
+        protected void getMageInformation()
         {
-
+            firstTalentSet.GetFrost(frost);
+            secondTalentSet.GetFire(fire);
+            Console.WriteLine("Frost Specialization:\n{0}\n\nFire Specialization\n{1}", frost, fire);
         }
     }
 }

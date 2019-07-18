@@ -8,6 +8,8 @@ namespace PatternsProject
 {
     interface ISpecialization
     {
-        void getSpecializationInfo();
+        void retrievePaladinInfo();
+        void retrieveWarriorInfo();
+        void retrieveMageInfo();
     }
 }
