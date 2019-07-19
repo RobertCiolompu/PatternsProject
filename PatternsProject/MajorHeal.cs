@@ -1,42 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatternProject
+
+namespace PatternsProject
 {
     class MajorHeal
     {
-        public int GetDamage(int min = 1, int max = 2500)  //metoda damage
+        public void GetMajorHeal(int min = 3000, int max = 405500)
         {
             Random rand = new Random();
             int damageresult = rand.Next(min, max);
-
-            return damageresult;
         }
 
-        public string GetEffect(string effect)
+        public void GetCooldown()
         {
-            Console.WriteLine("Cerc de foc : Incinerate");
-            return effect;
+            Console.WriteLine("Cooldown time: 10 min");
         }
 
-        public string GetCooldown(string second)
+        public void GetDefinition()
         {
-            Console.WriteLine("Cooldown time 2 sec");
-            return second;
+            Console.WriteLine("Calls upon Holy magic to heal an ally.");
         }
 
-        public string GetDefinition(string deff)
+        public void GetCastTime()
         {
-            Console.WriteLine("Draws fire toward the enemy, dealing (64.1% of Spell power) Fire damage.");
-            return deff;
-        }
-
-        public string GetCastTime(string cast)
-        {
-            return cast;
+            Console.WriteLine("Cast time: Instant");
         }
     }
 }

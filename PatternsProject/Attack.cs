@@ -1,37 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatternProject
+
+namespace PatternsProject
 {
     class Attack
     {
-        public int GetDamageAttack(int min = 1, int max = 2500)  //metoda damage
+        public void GetDamageAttack(int min = 1, int max = 100)
         {
             Random rand = new Random();
             int damageresult = rand.Next(min, max);
-
-            return damageresult;
         }
 
-        public string GetAttackEffect(string effect)
+        public void GetAttackDefinition()
         {
-            Console.WriteLine("Cerc de foc : Incinerate");
-            return effect;
+            Console.WriteLine("Starts combat by attacking a target with a melee weapon.(Low Damage)");
         }
 
-        public string GetAttackDefinition(string deff)
+        public void GetAttackCastTime()
         {
-            Console.WriteLine("Draws fire toward the enemy, dealing (64.1% of Spell power) Fire damage.");
-            return deff;
+            Console.WriteLine("Cast time: Instant");
         }
 
-        public string GetAttackCastTime(string instant)
-        {
-            return instant;
-
-        }
     }
 }
+

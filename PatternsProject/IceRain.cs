@@ -1,42 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatternProject
+
+namespace PatternsProject
 {
     class IceRain
     {
-        public int GetDamage(int min = 1, int max = 2500)  //metoda damage
+        public void GetDamage(int min = 500, int max = 2500)
         {
             Random rand = new Random();
             int damageresult = rand.Next(min, max);
-
-            return damageresult;
         }
 
-        public string GetEffect(string effect)
+        public void GetEffect()
         {
-            Console.WriteLine("Cerc de foc : Incinerate");
-            return effect;
+            Console.WriteLine("Deals 5 Frost damage every 0.5 seconds.");
+            Console.WriteLine("Movement speed slowed by 50 %.");
+            Console.WriteLine("1 second remaining");
         }
 
-        public string GetCooldown(string second)
+        public void GetCooldown()
         {
-            Console.WriteLine("Cooldown time 2 sec");
-            return second;
+            Console.WriteLine("Cooldown time: 2 sec");
         }
 
-        public string GetDefinition(string deff)
+        public void GetDefinition()
         {
-            Console.WriteLine("Draws fire toward the enemy, dealing (64.1% of Spell power) Fire damage.");
-            return deff;
+            Console.WriteLine("Deals 5 Frost damage every 0.5 sec to all enemies standing within the /nradius of an ice patch on the ground.This effect will persist as long as the target remains in this area.");
         }
 
-        public string GetCastTime(string cast)
+        public void GetCastTime()
         {
-            return cast;
+            Console.WriteLine("Cast time: 8 sec");
         }
     }
 }

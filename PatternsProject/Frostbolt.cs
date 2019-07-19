@@ -1,42 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatternProject
+
+namespace PatternsProject
 {
     class Frostbolt
     {
-        public int GetDamage(int min = 1, int max = 2500)  //metoda damage
+        public void GetDamage(int min = 300, int max = 500)
         {
             Random rand = new Random();
             int damageresult = rand.Next(min, max);
-
-            return damageresult;
         }
 
-        public string GetEffect(string effect)
+        public void GetEffect()
         {
-            Console.WriteLine("Cerc de foc : Incinerate");
-            return effect;
+            Console.WriteLine("Slowing movement speed.");
         }
 
-        public string GetCooldown(string second)
+        public void GetCooldown()
         {
-            Console.WriteLine("Cooldown time 2 sec");
-            return second;
+            Console.WriteLine("Cooldown time: 1 sec.");
         }
 
-        public string GetDefinition(string deff)
+        public void GetDefinition()
         {
-            Console.WriteLine("Draws fire toward the enemy, dealing (64.1% of Spell power) Fire damage.");
-            return deff;
+            Console.WriteLine("Launches a bolt of frost at the enemy, causing(51.1 % of Spell power) Frost damage and slowing movement speed by 50 % for 8 sec.");
         }
 
-        public string GetCastTime(string cast)
+        public void GetCastTime()
         {
-            return cast;
+            Console.WriteLine("Cast time: 2 sec.");
         }
     }
 }

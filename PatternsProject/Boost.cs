@@ -1,37 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PatternProject
+
+namespace PatternsProject
 {
     class Boost
     {
-        public int GetDamageBoost(int min = 1, int max = 2500)  //metoda damage
+        public void GetBoostDefinition()
         {
-            Random rand = new Random();
-            int damageresult = rand.Next(min, max);
-
-            return damageresult;
+            Console.WriteLine("Boost your next spell with 15% spellpower or with 4,8% crytical chance");
         }
 
-        public string GetBoostEffect(string effect)
+        public void GetBoostCastTime()
         {
-            Console.WriteLine("Cerc de foc : Incinerate");
-            return effect;
-        }
-
-        public string GetBoostDefinition(string deff)
-        {
-            Console.WriteLine("Draws fire toward the enemy, dealing (64.1% of Spell power) Fire damage.");
-            return deff;
-        }
-
-        public string GetBoostCastTime(string instant)
-        {
-            return instant;
-
+            Console.WriteLine("Cast time: Instant");
         }
     }
 }
