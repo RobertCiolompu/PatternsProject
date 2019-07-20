@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace PatternsProject
 {
-    interface IPaladinSpecialization
+    interface IWarriorSpecialization
     {
-        void retrievePaladinInfo();
-
+        void retrieveWarriorInfo();
     }
 }

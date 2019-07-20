@@ -26,15 +26,15 @@ namespace PatternsProject
                 switch (selectedIndex)
                 {
                     case 1:
-                        ISpecialization paladin = new SpecializationAdapter();
+                        IPaladinSpecialization paladin = new SpecializationAdapter();
                         paladin.retrievePaladinInfo();
                         break;
                     case 2:
-                        ISpecialization warrior = new SpecializationAdapter();
+                        IWarriorSpecialization warrior = new SpecializationAdapter();
                         warrior.retrieveWarriorInfo();
                         break;
                     case 3:
-                        ISpecialization mage = new SpecializationAdapter();
+                        IMageSpecialization mage = new SpecializationAdapter();
                         mage.retrieveMageInfo();
                         break;
                     default:

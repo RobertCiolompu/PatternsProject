@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatternsProject
 {
-    class SpecializationAdapter : Specialization, ISpecialization
+    class SpecializationAdapter : Specialization, IPaladinSpecialization, IWarriorSpecialization, IMageSpecialization
     {
         //Adapter pattern - grants access for object named client in Program.cs to method specialRequest defined in Adaptee.cs
 
